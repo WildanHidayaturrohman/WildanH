@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Pastikan body memiliki tinggi minimal penuh viewport */
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 23%, 97%);
+    color: #333333;
+    position: relative;
+}
+
+.background-overlay {
+    background-image: url('foto/tttttttttttt.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Mengatur opacity gambar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Menempatkan overlay di belakang konten */
+}
+
+header {
+    background-color: #4235f7;
+    color: rgb(252, 249, 249);
+    text-align: center;
+    padding: 50px 0;
+    position: relative; /* Menambahkan relative positioning untuk gambar */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+#myImage {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 100px; /* Atur lebar sesuai kebutuhan Anda */
+    height: 100px; /* Atur tinggi sama dengan lebar untuk memastikan gambar tetap bulat */
+    border-radius: 50%; /* Membuat gambar bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative; /* Memastikan section tidak tumpang tindih dengan background */
+    z-index: 1;
+}
+
+section h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
